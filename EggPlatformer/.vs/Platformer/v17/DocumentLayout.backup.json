@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\users\\2317919\\documents\\github\\platformergame\\platformer\\assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LevelPodium.cs",
+              "DocumentMoniker": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\LevelPodium.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelPodium.cs",
+              "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\LevelPodium.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelPodium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T11:29:53.532Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
