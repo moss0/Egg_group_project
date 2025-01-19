@@ -53,9 +53,9 @@ public class PlayerController : MonoBehaviour
         // && FastApproximately(0.0f, _rb.velocity.y, 0.1f)
         if (_isGrounded)
         {
-            _rb.velocity = new Vector3(_rb.velocity.x, 0.0f, _rb.velocity.z);
-            Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
-            _rb.AddForce(jump);
+            //_rb.velocity = new Vector3(_rb.velocity.x, 0.0f, _rb.velocity.z);
+            //Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
+            //_rb.AddForce(jump);
         }
         
         _rb.AddForce(Physics.gravity * (gravityScale - 1) * _rb.mass);
