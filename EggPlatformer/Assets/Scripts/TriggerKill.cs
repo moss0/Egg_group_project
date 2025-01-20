@@ -13,11 +13,17 @@ public class TriggerKill : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Transform playerStoreTransform = player.transform;
-        Destroy(player);
-        Debug.Log("instantiate");
-        //Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
+        if (other.CompareTag("Player"))
+        {
+            Transform playerStoreTransform = player.transform;
+            Renderer renderer = player.GetComponent<Renderer>();
+            renderer.enabled = false;
+            Rigidbody rb = player.GetComponent<Rigidbody>();
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            Debug.Log("instantiate");
+            //Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
 
-        // show retry menu which reloads scene
+            // show retry menu which reloads scene
+        }
     }
 }

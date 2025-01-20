@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\triggerkill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\triggerkill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\triggerkill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\triggerkill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TriggerKill.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\TriggerKill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TriggerKill.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\TriggerKill.cs",
               "RelativeToolTip": "Assets\\Scripts\\TriggerKill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T02:35:53.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OutOfBoundsScript.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\OutOfBoundsScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OutOfBoundsScript.cs",
@@ -51,12 +51,11 @@
               "RelativeToolTip": "Assets\\Scripts\\OutOfBoundsScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T02:34:56.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T02:34:56.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
@@ -69,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CameraBehavior.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\CameraBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehavior.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\CameraBehavior.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T01:29:10.332Z",
               "EditorCaption": ""

@@ -40,7 +40,7 @@ public class CameraBehavior : MonoBehaviour
 
         transform.rotation = targetRotation;
 
-        if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance))
+        if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance, 0 ,QueryTriggerInteraction.Ignore))
         {
             transform.position = hit.point;
             Debug.DrawLine(player.position, hit.point, Color.blue);
