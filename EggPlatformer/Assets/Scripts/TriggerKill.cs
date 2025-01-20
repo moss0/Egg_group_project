@@ -6,11 +6,18 @@ public class TriggerKill : MonoBehaviour
 {
     private GameObject player;
     public GameObject eggBrokenPrefab;
+
+    private GameObject levelManager;
+    private LevelManager levelManagerScriptRef;
     private void Start()
     {
         player = GameObject.Find("Player");
+        
         Renderer thisRenderer = GetComponent<Renderer>();
         thisRenderer.enabled = false;
+        
+        levelManager = GameObject.Find("LevelManager");
+        levelManagerScriptRef = levelManager.GetComponent<LevelManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +33,7 @@ public class TriggerKill : MonoBehaviour
             collider.enabled = false;
             //Debug.Log("instantiate");
             Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
-
+            levelManagerScriptRef.playerAlive = false;
             // show retry menu which reloads scene
         }
     }

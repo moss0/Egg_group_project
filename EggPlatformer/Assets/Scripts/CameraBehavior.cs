@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     public float rotationSpeed = 5f, zoomSpeed = 5f;
     public float minZoomDistance = 2f, maxZoomDistance = 15f;
 
@@ -13,7 +13,7 @@ public class CameraBehavior : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        if (player == null) player = GameObject.FindWithTag("Player").transform;
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     private void Update()

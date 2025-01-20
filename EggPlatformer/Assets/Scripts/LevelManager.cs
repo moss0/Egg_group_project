@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class LevelManagerScript : MonoBehaviour
 {
-    public bool playerAlive;
-    private void Update()
+    public bool playerAlive = true;
+    private void Awake()
     {
-        if (!playerAlive)
-        {
-
-        }
+        playerAlive = true;
     }
 }

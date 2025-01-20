@@ -1402,7 +1402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 7700662354143107851}
-  deadMenu: {fileID: 0}
+  deadMenu: {fileID: 696993840097131142}
+  escKeyText: {fileID: 1677635394159688704}
 --- !u!114 &911955057446467652
 MonoBehaviour:
   m_ObjectHideFlags: 0
