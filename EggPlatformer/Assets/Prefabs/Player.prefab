@@ -105,11 +105,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2975ad37f940dac489d85106bae2c45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2318525674059789458}
+  player: {fileID: 0}
   rotationSpeed: 5
   zoomSpeed: 5
   minZoomDistance: 2
   maxZoomDistance: 15
+  _currentZoomDistance: 10
 --- !u!1 &9215365736227286538
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +228,7 @@ Rigidbody:
   m_GameObject: {fileID: 9215365736227286538}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -258,6 +259,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 28
-  jumpForce: 100
   gravityScale: 3
-  _isGrounded: 0
+  _rbVelocityMax: 30
