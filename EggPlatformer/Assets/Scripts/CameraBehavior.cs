@@ -18,36 +18,34 @@ public class CameraBehavior : MonoBehaviour
 
     private void Update()
     {
-        float mouseX = Input.GetAxisRaw("Mouse X") * rotationSpeed;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * rotationSpeed;
-        _rotationX -= mouseY;
-        _rotationY += mouseX;
-        _rotationX = Mathf.Clamp(_rotationX, -90f, 90f);
-        Quaternion targetRotation = Quaternion.Euler(_rotationX, _rotationY, 0f);
-
-
-
-        float scrollWheel = Input.GetAxisRaw("Mouse ScrollWheel");
-        if (scrollWheel != 0)
+        if (Time.timeScale > 0)
         {
-            float zoomAmount = scrollWheel * zoomSpeed;
-            UpdateZoomDistance(zoomAmount);
-        }
+            float mouseX = Input.GetAxisRaw("Mouse X") * rotationSpeed;
+            float mouseY = Input.GetAxisRaw("Mouse Y") * rotationSpeed;
+            _rotationX -= mouseY;
+            _rotationY += mouseX;
+            _rotationX = Mathf.Clamp(_rotationX, -90f, 90f);
+            Quaternion targetRotation = Quaternion.Euler(_rotationX, _rotationY, 0f);
 
 
-        if (Input.GetKeyDown(KeyCode.Escape)) Cursor.lockState = CursorLockMode.None;
 
+            float scrollWheel = Input.GetAxisRaw("Mouse ScrollWheel");
+            if (scrollWheel != 0)
+            {
+                float zoomAmount = scrollWheel * zoomSpeed;
+                UpdateZoomDistance(zoomAmount);
+            }
 
-        transform.rotation = targetRotation;
-
-        if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance, 0 ,QueryTriggerInteraction.Ignore))
-        {
-            transform.position = hit.point;
-            Debug.DrawLine(player.position, hit.point, Color.blue);
-        }
-        else
-        {
-            transform.position = player.position - targetRotation * Vector3.forward * _currentZoomDistance;
+            transform.rotation = targetRotation;
+            if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance, 0, QueryTriggerInteraction.Ignore))
+            {
+                transform.position = hit.point;
+                Debug.DrawLine(player.position, hit.point, Color.blue);
+            }
+            else
+            {
+                transform.position = player.position - targetRotation * Vector3.forward * _currentZoomDistance;
+            }
         }
     }
 
