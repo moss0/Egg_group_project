@@ -7,7 +7,7 @@ public class CameraBehavior : MonoBehaviour
     public float minZoomDistance = 2f, maxZoomDistance = 15f;
 
     private RaycastHit hit;
-    private float _rotationX = 0f, _rotationY = 0f; 
+    private float _rotationX = 0f, _rotationY = 0f;
     [SerializeField] private float _currentZoomDistance = 10f;
 
     private void Start()
@@ -18,8 +18,8 @@ public class CameraBehavior : MonoBehaviour
 
     private void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
+        float mouseX = Input.GetAxisRaw("Mouse X") * rotationSpeed;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * rotationSpeed;
         _rotationX -= mouseY;
         _rotationY += mouseX;
         _rotationX = Mathf.Clamp(_rotationX, -90f, 90f);
@@ -27,7 +27,7 @@ public class CameraBehavior : MonoBehaviour
 
 
 
-        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+        float scrollWheel = Input.GetAxisRaw("Mouse ScrollWheel");
         if (scrollWheel != 0)
         {
             float zoomAmount = scrollWheel * zoomSpeed;
@@ -39,11 +39,11 @@ public class CameraBehavior : MonoBehaviour
 
 
         transform.rotation = targetRotation;
-        
+
         if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance))
         {
             transform.position = hit.point;
-            Debug.DrawLine(player.position, hit.point);
+            Debug.DrawLine(player.position, hit.point, Color.blue);
         }
         else
         {
@@ -55,26 +55,4 @@ public class CameraBehavior : MonoBehaviour
     {
         _currentZoomDistance = Mathf.Clamp(_currentZoomDistance - zoomAmount, minZoomDistance, maxZoomDistance);
     }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collison.CompareTag("Solid"))
-    //    {
-
-    //    }
-    //}
-
-
-
-    /* scroll camera stuff
-
-
-    RaycastHit cameraBackHit;
-    if (Physics.Raycast(transform.position, -transform.forward,out cameraBackHit,))
-    {
-        transform.position = cameraBackHit.point;
-    }
-
-
-    */
 }

@@ -829,6 +829,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6711477545153077858, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
+      propertyPath: _rbVelocityMax
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 9215365736227286538, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
       propertyPath: m_Name
       value: Player
