@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &1440482 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7484222090040301586, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
+  m_PrefabInstance: {fileID: 1524028417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &66648688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,7 +986,7 @@ PrefabInstance:
     - target: {fileID: 411829829014901166, guid: 5ee94aacd0748d9458ce78a4504405e2, type: 3}
       propertyPath: _rb
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1440482}
     - target: {fileID: 411829829014901166, guid: 5ee94aacd0748d9458ce78a4504405e2, type: 3}
       propertyPath: OutOfBoundsDest
       value: 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4772830531812446532}
   - component: {fileID: 6490821352226726277}
   - component: {fileID: 7017933468821881815}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2975ad37f940dac489d85106bae2c45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2318525674059789458}
   rotationSpeed: 5
   zoomSpeed: 5
   minZoomDistance: 2
@@ -125,7 +124,7 @@ GameObject:
   - component: {fileID: 1076532840678900110}
   - component: {fileID: 7484222090040301586}
   - component: {fileID: 6711477545153077858}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -141,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 9215365736227286538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.51, y: 5.38, z: -0.96285176}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -163,7 +162,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9215365736227286538}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee6c04c286581e847baeb6db5b91cbf3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

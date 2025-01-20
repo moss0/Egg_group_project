@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class OutOfBoundsScript : MonoBehaviour
 {
-    public Rigidbody _rb;
+    private GameObject player;
+    private Rigidbody playerRigidBody;
+
     public Transform OutOfBoundsDest;
 
-    //public void Start()
-    //{
-    //    _rb = GetComponent<Rigidbody>();
-    //}
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        playerRigidBody = player.GetComponent<Rigidbody>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            _rb.velocity = Vector3.zero;
-            _rb.transform.position = OutOfBoundsDest.position;
+            playerRigidBody.velocity = Vector3.zero;
+            playerRigidBody.transform.position = OutOfBoundsDest.position;
         }
     }
 

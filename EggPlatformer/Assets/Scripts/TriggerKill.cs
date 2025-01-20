@@ -25,16 +25,18 @@ public class TriggerKill : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Transform playerStoreTransform = player.transform;
+            
             Renderer renderer = player.GetComponent<Renderer>();
             renderer.enabled = false;
+
             Rigidbody rb = player.GetComponent<Rigidbody>();
             rb.constraints = RigidbodyConstraints.FreezeAll;
+
             Collider collider = player.GetComponent<Collider>();
             collider.enabled = false;
-            //Debug.Log("instantiate");
+
             Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
             levelManagerScriptRef.playerAlive = false;
-            // show retry menu which reloads scene
         }
     }
 }
