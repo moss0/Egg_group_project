@@ -9,15 +9,20 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject deadMenu;
+    public GameObject escKeyText;
     private bool gamePaused = false;
+    private LevelManager levelManager;
     void Start()
     {
         ResumeGame();
+        deadMenu.SetActive(false);
+        levelManager = levelManager.GetComponent<LevelManager>();
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && levelManager.playerAlive)
         {
             if (!gamePaused)
             {
@@ -27,6 +32,12 @@ public class UI : MonoBehaviour
             {
                 ResumeGame();
             }
+        }
+        else if (!levelManager.playerAlive)
+        {
+            deadMenu.SetActive(true);
+            escKeyText.SetActive(false);
+            pauseMenu.SetActive(false);
         }
     }
 
