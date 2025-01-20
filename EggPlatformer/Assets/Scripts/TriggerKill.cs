@@ -9,6 +9,8 @@ public class TriggerKill : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
+        Renderer thisRenderer = GetComponent<Renderer>();
+        thisRenderer.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,8 +22,10 @@ public class TriggerKill : MonoBehaviour
             renderer.enabled = false;
             Rigidbody rb = player.GetComponent<Rigidbody>();
             rb.constraints = RigidbodyConstraints.FreezeAll;
-            Debug.Log("instantiate");
-            //Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
+            Collider collider = player.GetComponent<Collider>();
+            collider.enabled = false;
+            //Debug.Log("instantiate");
+            Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
 
             // show retry menu which reloads scene
         }
