@@ -3,9 +3,10 @@ using static UnityEngine.GraphicsBuffer;
 
 public class CameraBehavior : MonoBehaviour
 {
-    private GameObject player;
+    private Transform player;
     public float rotationSpeed = 5f, zoomSpeed = 5f;
     public float minZoomDistance = 2f, maxZoomDistance = 15f;
+    public float camSnapMultiplier;
 
     private RaycastHit hit;
     private float _rotationX = 0f, _rotationY = 0f;
@@ -14,7 +15,7 @@ public class CameraBehavior : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player").transform;
     }
 
     private void Update()
@@ -38,16 +39,18 @@ public class CameraBehavior : MonoBehaviour
             }
 
             transform.rotation = targetRotation;
-            if (Physics.Raycast(player.transform.position, targetRotation * Vector3.back, out hit, _currentZoomDistance, 1, QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(player.position, targetRotation * Vector3.back, out hit, _currentZoomDistance, 1, QueryTriggerInteraction.Ignore))
             {
-                transform.position = hit.point;
-                Debug.DrawLine(player.transform.position, hit.point, Color.blue);
+                Vector3 vectDiff = hit.point - player.position;
+                transform.position = player.position + vectDiff * camSnapMultiplier;
+                Debug.DrawRay(player.position, vectDiff , Color.blue);
+                Debug.DrawRay(player.position, vectDiff * camSnapMultiplier, Color.yellow);
                 //print("hit");
             }
             else
             {
                 transform.position = player.transform.position - targetRotation * Vector3.forward * _currentZoomDistance;
-                Debug.DrawLine(player.transform.position, transform.position , Color.red);
+                Debug.DrawLine(player.position, transform.position , Color.red);
             }
         }
     }
