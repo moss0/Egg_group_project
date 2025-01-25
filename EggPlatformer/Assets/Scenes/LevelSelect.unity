@@ -694,14 +694,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4772830531812446532, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
-      propertyPath: near clip plane
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7017933468821881815, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
-      propertyPath: camSnapMultiplier
-      value: 0.85
-      objectReference: {fileID: 0}
     - target: {fileID: 9215365736227286538, guid: 9cb77516d5ddf5c4081905889dbd53ac, type: 3}
       propertyPath: m_Name
       value: Player

@@ -65,7 +65,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   zoomSpeed: 5
   minZoomDistance: 2
   maxZoomDistance: 15
+  camSnapMultiplier: 0.85
   _currentZoomDistance: 10
 --- !u!1 &9215365736227286538
 GameObject:
