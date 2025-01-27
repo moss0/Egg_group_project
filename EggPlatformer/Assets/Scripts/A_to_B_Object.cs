@@ -1,18 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class A_to_B_Object : MonoBehaviour
 {
-    public Transform target;
+    public GameObject target;
     [SerializeField] private float speed = 1;
     private float sinTime;
     private Vector3 a, b, storage;
-    
+    public GameObject[] objs;
     private void Start()
     {
         a = transform.position;
-        b = target.position;
+        b = target.transform.position;
+        objs[0] = target;
+        objs[1] = gameObject;
     }
     private void Update()
     {
