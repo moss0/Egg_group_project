@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\scenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,24 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "A_to_B_Object.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\A_to_B_Object.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\A_to_B_Object.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\A_to_B_Object.cs",
               "RelativeToolTip": "Assets\\Scripts\\A_to_B_Object.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T13:58:42.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SceneScript.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\SceneScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneScript.cs",
@@ -88,8 +88,7 @@
               "RelativeToolTip": "Assets\\Scripts\\LevelPodium.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T13:18:13.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T13:18:13.785Z"
             },
             {
               "$type": "Document",
