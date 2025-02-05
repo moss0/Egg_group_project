@@ -5,10 +5,13 @@ using UnityEngine;
 public class TriggerParent : MonoBehaviour
 {
     private GameObject player;
-    // Start is called before the first frame update
+
+    public bool playerOnTrigger;
     void Start()
     {
         player = GameObject.Find("Player");
+
+        playerOnTrigger = false;
 
         Renderer thisRenderer = GetComponent<Renderer>();
         thisRenderer.enabled = false;
@@ -26,6 +29,7 @@ public class TriggerParent : MonoBehaviour
             player.transform.SetParent(transform.parent, true);
             if (transform.parent != null)
             {
+                playerOnTrigger = true;
                 print("Egg is parented with: " + transform.parent.name);
             }
             else
@@ -42,6 +46,7 @@ public class TriggerParent : MonoBehaviour
         {
             if (transform.parent != null)
             {
+                playerOnTrigger = false;
                 print("Egg is no longer parented with: " + transform.parent.name);
             }
             else 

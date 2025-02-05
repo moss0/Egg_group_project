@@ -24,6 +24,8 @@ public class TriggerKill : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            player.transform.parent = null;
+
             Transform playerStoreTransform = player.transform;
             
             Renderer renderer = player.GetComponent<Renderer>();

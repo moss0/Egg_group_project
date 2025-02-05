@@ -5,36 +5,61 @@ using UnityEngine;
 
 public class A_to_B_Object : MonoBehaviour
 {
-    public GameObject target;
-    [SerializeField] private float speed = 1;
-    private float sinTime;
-    private Vector3 a, b, storage;
-    //public GameObject[] objs;
+    public Transform target;
+    public TriggerParent childTrigger;
+    public bool waitTillOnTrigger;
+
+    public float speed = 1.0f;
+    //public float timeTillDest = 1f;
+
+    //private Vector3 _velocity;
+    private float _sinTime;
+    private Vector3 _a, _b, _storage;
+    private bool _arrivedAtDest;
+    
     private void Start()
     {
-        a = transform.position;
-        b = target.transform.position;
-        //objs[0] = target;
-        //objs[1] = gameObject;
+        _a = transform.position;
+        _b = target.position;
+        
+        _arrivedAtDest = false;
     }
     private void Update()
     {
-        sinTime += Time.deltaTime * speed;
-        sinTime = Mathf.Clamp(sinTime, 0, Mathf.PI);
-        float t = evaluate(sinTime);
-        transform.position = Vector3.Lerp(a, b, t);
-        if (transform.position == b)
+        if (waitTillOnTrigger)
         {
-            storage = a;
-            a = b;
-            b = storage;
-            sinTime = 0;
+            if (childTrigger.playerOnTrigger)
+            {
+                if (_arrivedAtDest == false) 
+                {
+                    sineLerp();
+                }
+            }
         }
-        
-        
-        
-        Debug.DrawLine(a, b);
+        else
+        {
+            sineLerp();
+        }
+
+        Debug.DrawLine(_a, _b);
     }
+    
+    private void sineLerp()
+    {
+        _sinTime += Time.deltaTime * speed;
+        _sinTime = Mathf.Clamp(_sinTime, 0, Mathf.PI);
+        float t = evaluate(_sinTime);
+        transform.position = Vector3.Lerp(_a, _b, t);
+        if (transform.position == _b)
+        {
+            _storage = _a;
+            _a = _b;
+            _b = _storage;
+            _sinTime = 0;
+            _arrivedAtDest = true;
+        }
+    }
+    
     public float evaluate(float x)
     {
         return 0.5f * Mathf.Sin(x - Mathf.PI / 2f) + 0.5f;
