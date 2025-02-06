@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932285041711150618}
   m_Layer: 0
-  m_Name: empty
+  m_Name: ScaleThisEmpty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   target: {fileID: 5965275224100172452}
   childTrigger: {fileID: 8800972028414006416}
   waitTillOnTrigger: 0
-  speed: 1
+  speed: 12
 --- !u!1001 &3770804337695561832
 PrefabInstance:
   m_ObjectHideFlags: 0

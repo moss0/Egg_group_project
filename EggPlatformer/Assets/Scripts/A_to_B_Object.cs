@@ -46,7 +46,7 @@ public class A_to_B_Object : MonoBehaviour
     
     private void sineLerp()
     {
-        _sinTime += Time.deltaTime * speed;
+        _sinTime += Time.deltaTime * speed * 0.01f;
         _sinTime = Mathf.Clamp(_sinTime, 0, Mathf.PI);
         float t = evaluate(_sinTime);
         transform.position = Vector3.Lerp(_a, _b, t);
