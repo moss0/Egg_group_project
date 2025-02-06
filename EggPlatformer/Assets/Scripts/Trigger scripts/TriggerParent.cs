@@ -26,11 +26,11 @@ public class TriggerParent : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.transform.SetParent(transform.parent, true);
-            if (transform.parent != null)
+            player.transform.SetParent(transform.parent.parent, true);
+            if (transform.parent.parent != null)
             {
                 playerOnTrigger = true;
-                print("Egg is parented with: " + transform.parent.name);
+                print("Egg is parented with: " + transform.parent.parent.name);
             }
             else
             {
@@ -44,10 +44,10 @@ public class TriggerParent : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (transform.parent != null)
+            if (transform.parent.parent != null)
             {
                 playerOnTrigger = false;
-                print("Egg is no longer parented with: " + transform.parent.name);
+                print("Egg is no longer parented with: " + transform.parent.parent.name);
             }
             else 
             {
