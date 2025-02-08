@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4934471591828074085}
   - component: {fileID: 4556196583530226846}
   - component: {fileID: 7792388029160966675}
-  - component: {fileID: 3780683167921737216}
   - component: {fileID: 7654531727952152465}
+  - component: {fileID: 3780683167921737216}
+  - component: {fileID: 7084122712455124697}
   m_Layer: 0
   m_Name: TriggerKillCylinder
   m_TagString: Untagged
@@ -85,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3780683167921737216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9151449163451174171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c9005e274e1a74d9a3c500f2ee9ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eggBrokenPrefab: {fileID: 246395880454786105, guid: e77bafdae90871a49b4a08bceefea6ff, type: 3}
 --- !u!64 &7654531727952152465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -120,3 +108,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3780683167921737216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151449163451174171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c9005e274e1a74d9a3c500f2ee9ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eggBrokenPrefab: {fileID: 246395880454786105, guid: e77bafdae90871a49b4a08bceefea6ff, type: 3}
+--- !u!114 &7084122712455124697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151449163451174171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda4d5749825af0458cd428b40752341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

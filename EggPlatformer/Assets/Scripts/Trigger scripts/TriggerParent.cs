@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class TriggerParent : MonoBehaviour
 {
-    private GameObject player;
-
+    public Transform masterParent;
     public bool playerOnTrigger;
+
+    private GameObject _player;
+    
     void Start()
     {
-        player = GameObject.Find("Player");
+        _player = GameObject.Find("Player");
 
         playerOnTrigger = false;
-
-        Renderer thisRenderer = GetComponent<Renderer>();
-        thisRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -26,35 +25,35 @@ public class TriggerParent : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.transform.SetParent(transform.parent.parent, true);
-            if (transform.parent.parent != null)
+            playerOnTrigger = true;
+            _player.transform.SetParent(masterParent, true);
+            
+            if (masterParent != null)
             {
-                playerOnTrigger = true;
-                print("Egg is parented with: " + transform.parent.parent.name);
+                print("Egg is parented with: " + masterParent.name);
             }
             else
             {
                 print("Egg is parented with: parentless trigger");
-            }
-                
-                    
+            }      
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (transform.parent.parent != null)
+            playerOnTrigger = false;
+
+            if (masterParent != null)
             {
-                playerOnTrigger = false;
-                print("Egg is no longer parented with: " + transform.parent.parent.name);
+                print("Egg is no longer parented with: " + masterParent.name);
             }
             else 
             {
                 print("Egg is no longer parented with: parentless trigger");
             }
                 
-            player.transform.SetParent(null);
+            _player.transform.SetParent(null);
             
         }
     }

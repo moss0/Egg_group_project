@@ -231,6 +231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParentTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 5654203357944646904, guid: cb4d586561c52dc48ba102e57d2f260c, type: 3}
+      propertyPath: masterParent
+      value: 
+      objectReference: {fileID: 637013497702503587}
+    - target: {fileID: 5654203357944646904, guid: cb4d586561c52dc48ba102e57d2f260c, type: 3}
+      propertyPath: _masterParent
+      value: 
+      objectReference: {fileID: 637013497702503587}
     - target: {fileID: 8196648062708563407, guid: cb4d586561c52dc48ba102e57d2f260c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

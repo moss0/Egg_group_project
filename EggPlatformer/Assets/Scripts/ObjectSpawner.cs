@@ -12,19 +12,19 @@ public class ObjectSpawner : MonoBehaviour
     public float forceScale;
     public bool _reuseable;
 
+    private Collider _trigger;
     private Transform _player;
     private bool _noMore;
+
     void Start()
     {
         _player = GameObject.FindWithTag("Player").transform;
-
-        Renderer triggerRenderer = GetComponent<Renderer>();
-        triggerRenderer.enabled = false;
+        _trigger = transform.GetChild(0).GetComponent<Collider>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void InstanceSpawner()
     {
-        if (other.CompareTag("Player") && _noMore == false)
+        if (_noMore == false)
         {
             for (int i = 0; i < numberToSpawn; i++)
             {
@@ -35,7 +35,10 @@ public class ObjectSpawner : MonoBehaviour
                     instance.GetComponent<Rigidbody>().AddForce(v.normalized * forceScale);
                     instance.transform.parent = null;
                     instance.transform.localScale = new Vector3(1f,1f,1f) * prefabScale;
+                    Destroy(instance, 10f);
                 }
+                //_reuseable == true ? _noMore = false : _noMore = true;
+                
                 if (_reuseable)
                 {
                     _noMore = false;
@@ -44,6 +47,7 @@ public class ObjectSpawner : MonoBehaviour
                 {
                     _noMore = true;
                 }
+                
             }
         }
     }

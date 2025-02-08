@@ -12,10 +12,7 @@ public class TriggerKill : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-        
-        Renderer thisRenderer = GetComponent<Renderer>();
-        thisRenderer.enabled = false;
-        
+
         levelManager = GameObject.Find("LevelManager");
         levelManagerScriptRef = levelManager.GetComponent<LevelManager>();
     }

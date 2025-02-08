@@ -4,7 +4,7 @@ using UnityEngine;
 /*
  * 
  * Failed attempt to group trigger classes into one single class
- * 
+ * It was a bad idea, I think
  * 
 public enum TriggerType {NotSet, Kill, Parenter, LevelWin, SceneChange}
 public class MyTriggers : MonoBehaviour

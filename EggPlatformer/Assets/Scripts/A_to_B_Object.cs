@@ -10,9 +10,7 @@ public class A_to_B_Object : MonoBehaviour
     public bool waitTillOnTrigger;
 
     public float speed = 1.0f;
-    //public float timeTillDest = 1f;
 
-    //private Vector3 _velocity;
     private float _sinTime;
     private Vector3 _a, _b, _storage;
     private bool _arrivedAtDest;

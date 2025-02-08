@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9066004925617441860}
   - component: {fileID: 424169747571761302}
   - component: {fileID: 2488972790702608169}
+  - component: {fileID: 4543336394918463698}
   m_Layer: 0
   m_Name: TriggerKillCuboid
   m_TagString: Untagged
@@ -119,3 +120,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggBrokenPrefab: {fileID: 246395880454786105, guid: e77bafdae90871a49b4a08bceefea6ff, type: 3}
+--- !u!114 &4543336394918463698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598951900360034195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda4d5749825af0458cd428b40752341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
