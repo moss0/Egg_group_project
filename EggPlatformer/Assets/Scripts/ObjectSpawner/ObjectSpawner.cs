@@ -5,45 +5,48 @@ using UnityEngine.Animations;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    public GameObject trigger;
     public GameObject prefabToSpawn;
+    public float prefabScale = 1f;
     public List<Transform> objectSpawnPositions = new List<Transform>();
     public int numberToSpawn;
     public float forceScale;
-    
-    
-    private Rigidbody _rb;
+    public bool _reuseable;
+
     private Transform _player;
-    private Vector3 _towardPlayer;
+    private bool _noMore;
     void Start()
     {
-        _rb = prefabToSpawn.GetComponent<Rigidbody>();
         _player = GameObject.FindWithTag("Player").transform;
 
-        Renderer triggerRenderer = trigger.GetComponent<Renderer>();
+        Renderer triggerRenderer = GetComponent<Renderer>();
         triggerRenderer.enabled = false;
-    }
-
-    
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        transform.GetChild(0).GetComponent<Collider>();
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && _noMore == false)
         {
             for (int i = 0; i < numberToSpawn; i++)
             {
                 foreach (Transform spawnPos in objectSpawnPositions)
                 {
-                    Instantiate(prefabToSpawn, spawnPos);
-                    Vector3 v = spawnPos.position - _player.position;
-                    spawnPos.GetComponent<Rigidbody>().AddForce(v.normalized * forceScale);
+                    var instance = Instantiate(prefabToSpawn, spawnPos);
+                    Vector3 v = _player.position - spawnPos.position;
+                    instance.GetComponent<Rigidbody>().AddForce(v.normalized * forceScale);
+                    instance.transform.parent = null;
+                    instance.transform.localScale = new Vector3(1f,1f,1f) * prefabScale;
+                }
+                if (_reuseable)
+                {
+                    _noMore = false;
+                }
+                else
+                {
+                    _noMore = true;
                 }
             }
         }
     }
+
+    //transform.GetChild(0).GetComponent<Collider>();
 }
