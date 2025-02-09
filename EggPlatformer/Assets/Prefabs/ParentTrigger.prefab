@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4983023261032698845}
   - component: {fileID: 5887329480530833315}
   - component: {fileID: 2732489791638224295}
-  - component: {fileID: 5654203357944646904}
+  - component: {fileID: 7788565417695673301}
   - component: {fileID: 2577558600553738817}
   m_Layer: 0
   m_Name: ParentTrigger
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5654203357944646904
+--- !u!114 &7788565417695673301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,11 +116,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 542251172929802666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24baa6be1b5a39348b50380d0b417f72, type: 3}
+  m_Script: {fileID: 11500000, guid: 308827eb265e89749b4e627a13362d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   masterParent: {fileID: 0}
-  playerOnTrigger: 0
+  _type: 2
 --- !u!114 &2577558600553738817
 MonoBehaviour:
   m_ObjectHideFlags: 0

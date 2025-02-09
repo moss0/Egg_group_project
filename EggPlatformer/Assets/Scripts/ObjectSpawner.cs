@@ -51,6 +51,4 @@ public class ObjectSpawner : MonoBehaviour
             }
         }
     }
-
-    //transform.GetChild(0).GetComponent<Collider>();
 }
