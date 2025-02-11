@@ -11,23 +11,21 @@ public class UI : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject deadMenu;
     public GameObject escKeyText;
-    private bool gamePaused = false;
-    private GameObject levelManager;
-    private LevelManager levelManagerScriptRef;
-    void Start()
+    public LevelManager levelManager;
+
+    private bool _gamePaused = false;
+
+    private void Start()
     {
         ResumeGame();
         deadMenu.SetActive(false);
-        
-        levelManager = GameObject.Find("LevelManager");
-        levelManagerScriptRef = levelManager.GetComponent<LevelManager>();
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetButtonDown("Cancel") && levelManagerScriptRef.playerAlive)
+        if (Input.GetButtonDown("Cancel") && levelManager.playerAlive)
         {
-            if (!gamePaused)
+            if (!_gamePaused)
             {
                 PauseGame();
             }
@@ -36,7 +34,7 @@ public class UI : MonoBehaviour
                 ResumeGame();
             }
         }
-        else if (!levelManagerScriptRef.playerAlive)
+        else if (!levelManager.playerAlive)
         {
             deadMenu.SetActive(true);
             escKeyText.SetActive(false);
@@ -47,7 +45,7 @@ public class UI : MonoBehaviour
 
     public void PauseGame()
     {
-        gamePaused = true;
+        _gamePaused = true;
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         pauseMenu.SetActive(true);
@@ -55,7 +53,7 @@ public class UI : MonoBehaviour
 
     public void ResumeGame()
     {
-        gamePaused = false;
+        _gamePaused = false;
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
