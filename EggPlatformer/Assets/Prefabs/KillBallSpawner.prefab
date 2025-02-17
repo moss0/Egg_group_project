@@ -173,7 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterParent: {fileID: 202102901931588044}
-  objectSpawnerScript: 1
+  _type: 1
+  playerOnTrigger: 0
 --- !u!114 &1872845016926933369
 MonoBehaviour:
   m_ObjectHideFlags: 0

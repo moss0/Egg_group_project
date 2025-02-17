@@ -120,7 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterParent: {fileID: 0}
-  _type: 2
+  type: 2
+  playerOnTrigger: 0
 --- !u!114 &2577558600553738817
 MonoBehaviour:
   m_ObjectHideFlags: 0

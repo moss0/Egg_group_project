@@ -11,6 +11,7 @@ public class UI : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject deadMenu;
     public GameObject escKeyText;
+    public GameObject optionsMenu;
     public LevelManager levelManager;
 
     private bool _gamePaused = false;
@@ -23,7 +24,7 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel") && levelManager.playerAlive)
+        if (Input.GetButtonDown("Cancel") && levelManager.PlayerAlive)
         {
             if (!_gamePaused)
             {
@@ -33,14 +34,23 @@ public class UI : MonoBehaviour
             {
                 ResumeGame();
             }
+            if (optionsMenu)
+            {
+
+            }
         }
-        else if (!levelManager.playerAlive)
+        else if (!levelManager.PlayerAlive)
         {
-            deadMenu.SetActive(true);
-            escKeyText.SetActive(false);
-            pauseMenu.SetActive(false);
-            Cursor.lockState = CursorLockMode.None;
+            PlayerDead();
         }
+    }
+
+    private void PlayerDead()
+    {
+        deadMenu.SetActive(true);
+        escKeyText.SetActive(false);
+        pauseMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void PauseGame()
@@ -61,9 +71,15 @@ public class UI : MonoBehaviour
     
     public void ResetScene()
     {
+        levelManager.PlayerAlive = true;
         string currentSceneName = SceneManager.GetActiveScene().name;
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(currentSceneName);
+    }
+
+    public void OptionsButton()
+    {
+
     }
 
     public void QuitToMenu()

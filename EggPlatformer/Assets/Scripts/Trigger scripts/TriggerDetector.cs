@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TriggerDetector : MonoBehaviour
 {
-    public enum TriggerType { Kill, Spawning, Parenting }
+    public enum TriggerType { Kill, Spawning, Parenting, SceneChange }
 
     public GameObject masterParent;
-    public TriggerType _type;
+    public TriggerType type;
     public bool playerOnTrigger;
 
     
@@ -22,7 +22,7 @@ public class TriggerDetector : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerOnTrigger = true;
-            switch (_type)
+            switch (type)
             {
                 case TriggerType.Kill:
                     masterParent.GetComponent<KillScript>().KillPlayer();
@@ -32,6 +32,9 @@ public class TriggerDetector : MonoBehaviour
                     return;
                 case TriggerType.Parenting:
                     masterParent.GetComponent<ParentingScript>().ParentAdd();
+                    return;
+                case TriggerType.SceneChange:
+                    masterParent.GetComponent<SceneChanger>().ChangeScene();
                     return;
                 default:
                     Debug.LogWarning("Trigger not set");
@@ -45,7 +48,7 @@ public class TriggerDetector : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerOnTrigger = false;
-            switch (_type)
+            switch (type)
             {
                 case TriggerType.Kill:
                     

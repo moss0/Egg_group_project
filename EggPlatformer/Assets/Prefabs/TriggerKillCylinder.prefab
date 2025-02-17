@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7792388029160966675}
   - component: {fileID: 7654531727952152465}
   - component: {fileID: 3780683167921737216}
+  - component: {fileID: 3063488713568797274}
   - component: {fileID: 7084122712455124697}
   m_Layer: 0
   m_Name: TriggerKillCylinder
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.213273, y: 1.8403794, z: 7.213273}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,6 +122,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggBrokenPrefab: {fileID: 246395880454786105, guid: e77bafdae90871a49b4a08bceefea6ff, type: 3}
+  levelManager: {fileID: 11400000, guid: 6ad48981609f0d64180651dc06551a6b, type: 2}
+--- !u!114 &3063488713568797274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151449163451174171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308827eb265e89749b4e627a13362d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterParent: {fileID: 9151449163451174171}
+  _type: 0
+  playerOnTrigger: 0
 --- !u!114 &7084122712455124697
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7500768043193991839}
   - component: {fileID: 8688758268563721775}
   - component: {fileID: 1183456828089154015}
+  - component: {fileID: 7721508243130841124}
   m_Layer: 0
   m_Name: Level_Podium
   m_TagString: Solid
@@ -107,6 +108,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7721508243130841124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703449890674167371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33552302c871184eadc4cdf737a2139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 0
 --- !u!1 &3541196781655751483
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +132,7 @@ GameObject:
   - component: {fileID: 2457356878421669370}
   - component: {fileID: 2828587299636092889}
   - component: {fileID: 663430844295262078}
-  - component: {fileID: 6990530348138129090}
+  - component: {fileID: 7381058851930839149}
   m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
@@ -170,7 +184,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6990530348138129090
+--- !u!114 &7381058851930839149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,10 +193,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3541196781655751483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33552302c871184eadc4cdf737a2139, type: 3}
+  m_Script: {fileID: 11500000, guid: 308827eb265e89749b4e627a13362d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: 0
+  masterParent: {fileID: 1703449890674167371}
+  type: 0
+  playerOnTrigger: 0
 --- !u!1 &6401368382254435427
 GameObject:
   m_ObjectHideFlags: 0

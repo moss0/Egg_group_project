@@ -5,17 +5,13 @@ using UnityEngine.SceneManagement;
 public class KillScript : MonoBehaviour
 {
     public GameObject eggBrokenPrefab;
+    public LevelManager levelManager;
 
     private GameObject _player;
-    private GameObject levelManager;
-    private LevelManager levelManagerScriptRef;
-
+    
     private void Start()
     {
-        _player = GameObject.Find("Player");
-
-        levelManager = GameObject.Find("LevelManager");
-        levelManagerScriptRef = levelManager.GetComponent<LevelManager>();
+        _player = GameObject.FindWithTag("Player");
     }
 
     public void KillPlayer()
@@ -23,10 +19,9 @@ public class KillScript : MonoBehaviour
         _player.transform.parent = null;
 
         Transform playerStoreTransform = _player.transform;
-            
-        Renderer renderer = _player.GetComponent<Renderer>();
-        renderer.enabled = false;
 
+        _player.GetComponent<Renderer>().enabled = false;
+        
         Rigidbody rb = _player.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeAll;
 
@@ -34,6 +29,6 @@ public class KillScript : MonoBehaviour
         collider.enabled = false;
 
         Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
-        levelManagerScriptRef.playerAlive = false;
+        levelManager.PlayerAlive = false;
     }
 }

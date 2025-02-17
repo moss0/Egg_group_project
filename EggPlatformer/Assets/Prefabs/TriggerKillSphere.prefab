@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 473632929736271289}
   - component: {fileID: 7475873394625754141}
   - component: {fileID: 5254851871101418658}
+  - component: {fileID: 1065207225144731647}
   - component: {fileID: 4082176181487336821}
   m_Layer: 0
   m_Name: TriggerKillSphere
@@ -120,6 +121,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggBrokenPrefab: {fileID: 246395880454786105, guid: e77bafdae90871a49b4a08bceefea6ff, type: 3}
+  levelManager: {fileID: 11400000, guid: 6ad48981609f0d64180651dc06551a6b, type: 2}
+--- !u!114 &1065207225144731647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225342454474059243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308827eb265e89749b4e627a13362d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterParent: {fileID: 3225342454474059243}
+  _type: 0
+  playerOnTrigger: 0
 --- !u!114 &4082176181487336821
 MonoBehaviour:
   m_ObjectHideFlags: 0
