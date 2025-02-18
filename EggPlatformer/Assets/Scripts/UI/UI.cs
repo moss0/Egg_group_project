@@ -20,6 +20,7 @@ public class UI : MonoBehaviour
     {
         ResumeGame();
         deadMenu.SetActive(false);
+        optionsMenu.SetActive(false);
     }
 
     private void Update()
@@ -77,13 +78,25 @@ public class UI : MonoBehaviour
         SceneManager.LoadScene(currentSceneName);
     }
 
-    public void OptionsButton()
+    public void OptionsMenuEnter()
     {
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(true );
+    }
 
+    public void OptionsMenuExit()
+    {
+        pauseMenu.SetActive(true);
+        optionsMenu.SetActive(false);
     }
 
     public void QuitToMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ChangeFrameRate()
+    {
+        Application.targetFrameRate = 60;
     }
 }
