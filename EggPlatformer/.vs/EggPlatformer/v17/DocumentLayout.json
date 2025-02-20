@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scriptable objects\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptable objects\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\trigger scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\trigger scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trigger scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trigger scripts\\triggerdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scriptable objects\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptable objects\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\assets\\scripts\\trigger scripts\\killscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,32 +46,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SceneChanger.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T15:20:21.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scriptable Objects\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scriptable Objects\\LevelManager.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scriptable Objects\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Scriptable Objects\\LevelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T21:26:24.034Z"
+              "WhenOpened": "2025-02-11T21:26:24.034Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -81,19 +69,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenu.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\UI\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T03:03:34.804Z"
+              "WhenOpened": "2025-02-18T03:03:34.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UI.cs",
               "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\UI\\UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UI.cs",
               "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\UI\\UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UI.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwGMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T03:03:17.12Z",
               "EditorCaption": ""
@@ -108,7 +97,21 @@
               "RelativeToolTip": "Assets\\Scripts\\Trigger scripts\\TriggerDetector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T13:36:41.097Z"
+              "WhenOpened": "2025-02-09T13:36:41.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SceneChanger.cs",
+              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
+              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:20:21.032Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
