@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 0
+  levelManager: {fileID: 11400000, guid: 6ad48981609f0d64180651dc06551a6b, type: 2}
   endOfLevelWarp: 0
 --- !u!1 &2434696219164738388
 GameObject:

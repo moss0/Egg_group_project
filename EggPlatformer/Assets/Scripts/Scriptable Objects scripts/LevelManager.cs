@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "LevelManager")] //, menuName = ""
 public class LevelManager : ScriptableObject
@@ -14,10 +15,13 @@ public class LevelManager : ScriptableObject
         set { playerAlive = value; }
     }
 
-    private bool[] levelNumberBeat = new bool[5];
+    public int currentLevelNumber;
 
-    //private void Awake()
-    //{
-    //    playerAlive = true;
-    //}
+    public bool[] levelNumberBeat = new bool[5];
+
+    private void Awake()
+    {
+        playerAlive = true;
+        currentLevelNumber = 0;
+    }
 }
