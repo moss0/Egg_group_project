@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 public class KillScript : MonoBehaviour
 {
     public GameObject eggBrokenPrefab;
@@ -29,6 +26,6 @@ public class KillScript : MonoBehaviour
         collider.enabled = false;
 
         Instantiate(eggBrokenPrefab, playerStoreTransform.transform.position, playerStoreTransform.transform.rotation);
-        levelManager.PlayerAlive = false;
+        levelManager.playerAlive = false;
     }
 }

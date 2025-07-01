@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\trigger scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trigger scripts\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\scriptable object\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\scriptable object\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\empty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\empty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\makeinviswhileplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\makeinviswhileplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|d:\\github\\egg_group_project\\eggplatformer\\assets\\scripts\\rotatingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBF3EEB-BA1C-9697-B225-16024E1138C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SceneChanger.cs",
-              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Trigger scripts\\SceneChanger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "RotatingObject.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\RotatingObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotatingObject.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\RotatingObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotatingObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T23:07:09.266Z",
+              "WhenOpened": "2025-07-01T22:21:56.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:55.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OutOfBoundsScript.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\OutOfBoundsScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OutOfBoundsScript.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\OutOfBoundsScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OutOfBoundsScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:54.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectSpawner.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\ObjectSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:53.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MakeInvisWhilePlay.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\MakeInvisWhilePlay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MakeInvisWhilePlay.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\MakeInvisWhilePlay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MakeInvisWhilePlay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:52.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Empty.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Empty.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Empty.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Empty.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Empty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:51.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraBehavior.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\CameraBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehavior.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\CameraBehavior.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:21:50.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LevelManager.cs",
-              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Scriptable Object\\LevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Scriptable Object\\LevelManager.cs",
-              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\Scriptable Object\\LevelManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Scriptable Object\\LevelManager.cs",
+              "Title": "A_to_B_Object.cs",
+              "DocumentMoniker": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\A_to_B_Object.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\A_to_B_Object.cs",
+              "ToolTip": "D:\\GitHub\\Egg_group_project\\EggPlatformer\\Assets\\Scripts\\A_to_B_Object.cs",
+              "RelativeToolTip": "Assets\\Scripts\\A_to_B_Object.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T23:06:58.047Z"
+              "WhenOpened": "2025-07-01T22:21:49.169Z",
+              "EditorCaption": ""
             }
           ]
         }

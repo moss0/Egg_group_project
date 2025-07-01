@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
 
 
@@ -18,6 +14,7 @@ public class UI : MonoBehaviour
 
     private void Start()
     {
+        Application.targetFrameRate = 60;
         ResumeGame();
         deadMenu.SetActive(false);
         optionsMenu.SetActive(false);
@@ -25,7 +22,7 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel") && levelManager.PlayerAlive)
+        if (Input.GetButtonDown("Cancel") && levelManager.playerAlive)
         {
             if (!_gamePaused)
             {
@@ -40,7 +37,7 @@ public class UI : MonoBehaviour
 
             }
         }
-        else if (!levelManager.PlayerAlive)
+        else if (!levelManager.playerAlive)
         {
             PlayerDead();
         }
@@ -72,7 +69,7 @@ public class UI : MonoBehaviour
     
     public void ResetScene()
     {
-        levelManager.PlayerAlive = true;
+        levelManager.playerAlive = true;
         string currentSceneName = SceneManager.GetActiveScene().name;
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(currentSceneName);

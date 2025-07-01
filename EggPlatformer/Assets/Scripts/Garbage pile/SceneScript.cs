@@ -1,5 +1,5 @@
-using UnityEditor;
-using UnityEngine;
+//using UnityEditor;
+//using UnityEngine;
 
 //class SceneScript : Editor
 //{
