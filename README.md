@@ -12,7 +12,7 @@
 
 **Build Link:** https://moss-0.itch.io/egg-themed-project
 
-**Video Demonstration Link:** URL or Embed
+**Video Demonstration Link:** https://dai.ly/k5IAnoxPRp0DYlDlWIO
 
 ---
 
@@ -20,7 +20,9 @@
 
 Summarise your task, goals, approach, and final outcome. What was the intent of your work? What is the most important thing to know before reading on?
 
-The task was to create a game themed around the topic: egg, using the Unity Engine and writing scripts in C#
+<br>
+
+The task is to create a game themed around the topic: egg, using the Unity Engine and writing scripts in C#, and then publish it onto itch.io as a WebGL game.
 
 My goal is to create a 3 Dimensional platforming game that revolves around getting an egg, which is controlled by the player, to the end of a handful of obstacle courses with a number of bugs as close to zero as possible.
 
@@ -62,6 +64,28 @@ Describe your technical and creative approach, including:
 * Feedback received and how it was integrated
 * New tools, workflows, or systems explored
 
+I started this project off a copy of a previous game I made called "PlatformerGame" which featured a ball that is continuously bouncing off the ground and you must navigate through obstacle courses to reach the end of the level. I did this since this project was originally a group project and I needed to make the workload easier on myself.
+
+![name](https://file.garden/aG_d-JVriWyKKSKN/Capture.PNG)
+*Figure 1: "PlatformerGame"*
+
+I made my own egg player model which took about 5 minutes and a broken version where every broken fragment is its own model which I used later for when the player dies/fails.
+
+<img src="https://file.garden/aG_d-JVriWyKKSKN/Capture2.PNG" alt="Alt Text" style="width:40%; height:auto;" />
+<img src="https://file.garden/aG_d-JVriWyKKSKN/Capture3.PNG" alt="Alt Text" style="width:40%; height:auto;" />
+
+<p>
+<img align="left" src="https://file.garden/aG_d-JVriWyKKSKN/Capture2.PNG" alt="image"/>
+<img align="right" src="https://file.garden/aG_d-JVriWyKKSKN/Capture2.PNG" />
+</p>
+
+Upon getting killed the egg should break by cracking open, I used the 
+
+<img src="https://file.garden/aG_d-JVriWyKKSKN/Capture5.PNG" alt="Alt Text" style="width:50%; height:auto;">
+<img src="https://file.garden/aG_d-JVriWyKKSKN/Capture4.PNG" alt="Alt Text" style="width:49%; height:auto;">
+
+
+
 #### Example Code Snippet
 
 ```csharp
@@ -75,7 +99,6 @@ public class HelloWorld : MonoBehaviour
     }
 }
 ```
-
 *Figure 2: Example code snippet using Unity's `Start()` method.*
 
 #### Example Image
